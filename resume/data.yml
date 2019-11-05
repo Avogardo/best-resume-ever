@@ -19,7 +19,7 @@ experience:
 - company: Unit4
   position: Software Engineer
   timeperiod: since July 2017
-  description: Maintenance and introduce new features to the corporate performance management web application.
+  description: Maintenance and introduce new features to the corporate performance management web application. Implementation of import and export UI logic for scenario elements like worksheets, cubes, etc.
   visualizations: Highcharts, D3.
   technologies: Angular, TypeScript, SCSS, RxJS, Karma, Jasmine.
   website: https://example.com

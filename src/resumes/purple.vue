@@ -113,10 +113,10 @@ export default Vue.component(name, getVueOptions(name));
 
     #resume-header {
         color: white;
-        height: 136px;
+        height: 125px;
         background-color: purple;
         box-shadow: inset 0px 0px 200px #301030;
-        padding: 40px 60px 25px;
+        padding: 33px 60px 25px;
 
         #header-left {
             /*width: 465px;*/
