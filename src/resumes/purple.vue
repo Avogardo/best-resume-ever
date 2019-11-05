@@ -116,7 +116,7 @@ export default Vue.component(name, getVueOptions(name));
         height: 136px;
         background-color: purple;
         box-shadow: inset 0px 0px 200px #301030;
-        padding: 40px 100px 25px;
+        padding: 40px 36px 25px;
 
         #header-left {
             /*width: 465px;*/
@@ -136,9 +136,10 @@ export default Vue.component(name, getVueOptions(name));
                 display:flex;
                 margin-top:20px;
                 font-size:14px;
+                white-space: nowrap;
 
                 span {
-                    margin-right:25px;
+                    margin-right:20px;
                 }
                 i {
                     margin-right:5px;
@@ -165,7 +166,7 @@ export default Vue.component(name, getVueOptions(name));
     }
 
     #resume-body {
-        padding: 40px 100px;
+        padding: 30px 100px;
 
         #experience-title, #education-title, #skills-title {
             font-size:26px;
@@ -219,7 +220,7 @@ export default Vue.component(name, getVueOptions(name));
     }
     #resume-footer {
         padding: 20px 100px;
-        height: 135px;
+        height: 120px;
         background-color: purple;
         box-shadow: inset 0px 0px 100px #301030;
         box-sizing: border-box;
