@@ -23,11 +23,11 @@
             <div class="experience" v-for="experience in person.experience" :key="experience.company">
                 <h2 class="company">{{experience.company}}</h2>
                 <p class="job-info"><span class="job-title">{{experience.position}} | </span><span class="experience-timeperiod">{{experience.timeperiod}}</span></p>
-                <p class="job-description" v-if="experience.description">Responsibilities: {{experience.description}}</p>
-                <p class="job-description" v-if="experience.visualizations">Visualizations: {{experience.visualizations}}</p>
-                <p class="job-description" v-if="experience.goal">Project goal: {{experience.goal}}</p>
-                <p class="job-description" v-if="experience.responsibilities">Responsibilities: {{experience.responsibilities}}</p>
-                <p class="job-description" v-if="experience.technologies">Technologies: {{experience.technologies}}</p>
+                <p class="job-description" v-if="experience.description"><span>Responsibilities:</span> {{experience.description}}</p>
+                <p class="job-description" v-if="experience.visualizations"><span>Visualizations:</span> {{experience.visualizations}}</p>
+                <p class="job-description" v-if="experience.goal"><span>Project goal:</span> {{experience.goal}}</p>
+                <p class="job-description" v-if="experience.responsibilities"><span>Responsibilities:</span> {{experience.responsibilities}}</p>
+                <p class="job-description" v-if="experience.technologies"><span>Technologies:</span> {{experience.technologies}}</p>
                 <ul v-if="experience.list" >
                     <li v-for="(item, index) in experience.list" :key="index">
                       <span class="list-item-black">
@@ -77,6 +77,13 @@ export default Vue.component(name, getVueOptions(name));
 <style lang="less" scoped>
 @text-purple: #680568;
 #template {
+    .job-description {
+        span {
+            color: @text-purple;
+            font-weight: 700;
+        }
+    }
+
     box-sizing:border-box;
     font-family:'Open Sans', sans-serif;
     h1, h2 {
