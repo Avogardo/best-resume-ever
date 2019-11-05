@@ -23,7 +23,11 @@
             <div class="experience" v-for="experience in person.experience" :key="experience.company">
                 <h2 class="company">{{experience.company}}</h2>
                 <p class="job-info"><span class="job-title">{{experience.position}} | </span><span class="experience-timeperiod">{{experience.timeperiod}}</span></p>
-                <p class="job-description" v-if="experience.description">{{experience.description}}</p>
+                <p class="job-description" v-if="experience.description">Responsibilities: {{experience.description}}</p>
+                <p class="job-description" v-if="experience.visualizations">Visualizations: {{experience.visualizations}}</p>
+                <p class="job-description" v-if="experience.goal">Project goal: {{experience.goal}}</p>
+                <p class="job-description" v-if="experience.responsibilities">Responsibilities: {{experience.responsibilities}}</p>
+                <p class="job-description" v-if="experience.technologies">Technologies: {{experience.technologies}}</p>
                 <ul v-if="experience.list" >
                     <li v-for="(item, index) in experience.list" :key="index">
                       <span class="list-item-black">
@@ -44,7 +48,6 @@
         <div id="skills-container" v-if="person.skills != []">
             <h2 id="skills-title">{{ lang.skills }}</h2>
             <div class="spacer"></div>
-            <p id="skill-description">{{person.knowledge}}</p>
             <ul id="skill-list">
                 <li class="skill" v-for="skill in person.skills" :key="skill.name">
                   <span class="list-item-black">
@@ -56,7 +59,6 @@
     </div>
     <div id="resume-footer">
         <div v-if="person.about">
-            <h2>{{ lang.about }}</h2>
             <p>{{person.about}}</p>
         </div>
     </div>
