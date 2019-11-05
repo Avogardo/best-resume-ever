@@ -116,7 +116,7 @@ export default Vue.component(name, getVueOptions(name));
         height: 136px;
         background-color: purple;
         box-shadow: inset 0px 0px 200px #301030;
-        padding: 40px 36px 25px;
+        padding: 40px 60px 25px;
 
         #header-left {
             /*width: 465px;*/
@@ -135,7 +135,7 @@ export default Vue.component(name, getVueOptions(name));
             #info-flex {
                 display:flex;
                 margin-top:20px;
-                font-size:14px;
+                font-size:13px;
                 white-space: nowrap;
 
                 span {
