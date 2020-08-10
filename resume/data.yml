@@ -16,16 +16,23 @@ birth:
   location: New York
 
 experience:
+- company: MyBenefit
+  position: Software Developer
+  timeperiod: since January 2020
+  description:  Improving Benefit Cafeteria System, implementation of Import logic on UI side for benefits and maintenance of sport cards module. 
+  technologies: React, TypeScript, RxJS, Jest, SCSS
+  website: https://example.com
+
 - company: Unit4
   position: Software Engineer
-  timeperiod: since July 2017
+  timeperiod: July 2017 - December 2019
   description: Maintenance and introduce new features to the corporate performance management web application. Implementation of import and export UI logic for scenario elements like worksheets, cubes, etc.
   visualizations: Highcharts, D3.
-  technologies: Angular, TypeScript, SCSS, RxJS, Karma, Jasmine.
+  technologies: Angular, TypeScript, SCSS, RxJS, Karma, Jasmine. (Old stack - AngularJS, JQuery, LESS, JavaScript)
   website: https://example.com
 
 - company: Nokia
-  position: Nokia Innoprojectssummer17 - Retro Tool
+  position: Student's project - Retro Tool
   timeperiod: March 2017 - June 2017
   goal: Web application for supporting retrospective meetings. Application allow
     management of several projects and create new posts in each of them and also show board with

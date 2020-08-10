@@ -166,7 +166,7 @@ export default Vue.component(name, getVueOptions(name));
     }
 
     #resume-body {
-        padding: 30px 100px;
+        padding: 30px 60px;
 
         #experience-title, #education-title, #skills-title {
             font-size:26px;
@@ -180,8 +180,12 @@ export default Vue.component(name, getVueOptions(name));
             }
         }
 
-        .company, .education-description {
+        .company {
             font-size:20px;
+        }
+
+        .education-description {
+            font-size:16px;
         }
 
         .job-info {
@@ -193,13 +197,27 @@ export default Vue.component(name, getVueOptions(name));
         .job-title, .degree {
             font-weight:700;
             color: @text-purple;
+        }
+
+        .job-title {
             font-size:16px;
+        }
+
+        .degree {
+            font-size:12px;
         }
 
         .experience-timeperiod, .education-timeperiod {
             font-weight:100;
             color: @text-purple;
+        }
+
+        .experience-timeperiod {
             font-size:16px;
+        }
+
+        .education-timeperiod {
+            font-size:12px;
         }
 
         .education {
@@ -219,7 +237,7 @@ export default Vue.component(name, getVueOptions(name));
         }
     }
     #resume-footer {
-        padding: 20px 100px;
+        padding: 20px 60px;
         height: 120px;
         background-color: purple;
         box-shadow: inset 0px 0px 100px #301030;
